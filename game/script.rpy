@@ -8,10 +8,13 @@ screen test1:
     vbox:
         align (.5, .5)
         stat_diagram:
+            diag_color (252, 224, 169)
+            polygon_color (204, 145, 91)
+            max_value 30
             for i, v in enumerate(_values):
                 stat v:
                     vbox:
-                        text "Stat: [v]"
+                        text "Stat: [v]" color (184, 180, 176)
                         hbox:
                             textbutton '+':
                                 action SetDict(_values, i, (v + 1))
@@ -55,7 +58,7 @@ screen test3:
 
 label start:
 
-    scene expression "#aaa"
+    scene expression "#555"
     while True:
         menu:
             "Тест №1. 7 элементов":

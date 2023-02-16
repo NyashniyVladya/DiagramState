@@ -11,7 +11,7 @@ init python early in _stats_gui:
     )
 
 
-    VERSION = (1, 0, 0)
+    VERSION = (1, 0, 1)
 
     class StatsDiag(renpy.Displayable, store.NoRollback):
 
